@@ -1,0 +1,19 @@
+<html>
+<head>
+    <script>
+        window.matchMedia('(prefers-color-scheme : dark)')
+            .addEventListener('change' , ({matches}) => {
+                if(matches){
+                    console.log('changed to the dark mode');
+                }else{
+                    console.log('changed to the light mode');
+                }
+            })
+    </script>
+</head>
+<body>
+    <div>
+        <h1 style="text-align:center">Detect System Theme Preference Change Using JavaScripts</h1>
+    </div>
+</body>
+</html>
